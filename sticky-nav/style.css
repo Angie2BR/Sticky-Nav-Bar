@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli300;400&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Muli", sans-serif;
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	position: relative;
+}
+
+.header {
+	background-color: #000;
+	letter-spacing: 2px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s ease;
+}
+
+.img {
+	position: absolute;
+	left: 40%;
+	animation: skull 4s alternate linear infinite;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+@keyframes skull {
+	0% {
+		opacity: 0.1;
+	}
+	25%,
+	50% {
+		opacity: 0.3;
+	}
+	50%,
+	75% {
+		opacity: 0.5;
+	}
+	75%,
+	100% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1.5;
+	}
+}
+
+@keyframes skull1 {
+	from {
+		transform: scale(0.28);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list li {
+	padding: 30px;
+	list-style-type: none;
+
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+a:hover {
+	color: red;
+}
+
+li:first-child a {
+	color: red;
+}
+
+li:first-child a:hover {
+	color: #fff;
+}
+
+.container {
+	height: 125vh;
+	width: 100vw;
+	background-image: url("https://images.unsplash.com/photo-1633446259606-45413db196a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.side {
+	block-size: auto;
+	writing-mode: vertical-lr;
+	position: absolute;
+	right: 0;
+	bottom: 25px;
+	border: 2px solid #fff;
+	padding: 20px;
+	float: right;
+	background-color: rgb(98, 98, 98);
+	opacity: 0.6;
+	box-shadow: 0 6px 6px 1px rgb(75, 75, 75);
+	font-size: 14px;
+}
+
+.side2 {
+	block-size: auto;
+	writing-mode: horizontal-lr;
+	border: 2px solid #fff;
+	padding: 20px;
+	position: absolute;
+	right: 150px;
+	bottom: 15px;
+	background-color: rgb(98, 98, 98);
+	opacity: 0.6;
+	box-shadow: 0 6px 6px 1px rgb(75, 75, 75);
+	font-size: 14px;
+}
+
+.container h1 {
+	letter-spacing: 2px;
+	font-size: 50px;
+	margin-top: 150px;
+}
+
+p {
+	font-size: 20px;
+	font-style: italic;
+	margin-top: 0;
+	float: left;
+}
+
+.section {
+	background-color: rgb(225, 214, 199);
+	color: #000;
+	height: 80vh;
+	text-align: left;
+	padding: 80px;
+}
